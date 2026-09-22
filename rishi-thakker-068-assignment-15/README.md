@@ -1,28 +1,15 @@
+**Name: Rishi Thakker**
+**Roll No.: 150096725068**
+**Cohort: Sam Altman**
+
+**Deployed Link:** https://assignment-15-realtime-auction-platform-bddv.onrender.com/
+
+
 # 🔨 Real-Time Live Auction & Bidding Engine (Socket.io)
 
 A live auction floor built with **Node.js, Express and Socket.io**. The server is
 authoritative: it validates every bid, runs the countdown clock, and decides when
 the auction ends — a client can't fake a bid or extend the clock itself.
-
-## Setup
-
-```bash
-npm install
-npm run dev   # or npm start
-```
-
-Open `http://localhost:5000` in multiple tabs to simulate multiple bidders.
-
-## How to test
-
-1. Start the server: `http://localhost:5000`.
-2. Open three tabs: Bidder A (Vikram), Bidder B (Ananya), Viewer C — join the
-   same auction ID (`AUC_VINTAGE_99` by default) with different names.
-3. Place a bid from Vikram — all 3 screens should update to the new highest bid.
-4. Place a higher bid from Ananya — Vikram should see an **"Outbid"** alert banner.
-5. Wait until the timer drops below 15 seconds, then place a bid — the clock
-   should jump back to 20 seconds (**Anti-Snipe Protection**).
-6. Let the clock hit 0 — the room receives `auction:sold` and further bids are rejected.
 
 ## Project structure
 
